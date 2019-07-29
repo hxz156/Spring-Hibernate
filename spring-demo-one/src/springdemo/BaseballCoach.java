@@ -11,7 +11,7 @@ public class BaseballCoach implements Coach{
 	}
 	@Override
 	public String getDailyWorkout() {
-		return "spend 30 minnutes review";
+		return "Baseball coach tell you spend 30 minnutes review";
 	}
 
 	@Override

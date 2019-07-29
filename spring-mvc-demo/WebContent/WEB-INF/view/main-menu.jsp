@@ -4,18 +4,18 @@
 <html>
 <body>
 
-<h2>Spring MVC Demo - Home Page</h2>
+<h2>Haoxuan Project - Home Page</h2>
 
 <br>
-<a href="hello/showForm">show form</a>
-
-<br>
-
-<a href="student/showForm">student form</a>
+<a href="hello/showForm">Changing name to Upper Case (HelloWorldController)</a>
 
 <br><br>
 
-<a href="customer/showForm">Customer form</a>
+<a href="student/showForm">Choose your language and Country (StudentController)</a>
+
+<br><br>
+
+<a href="customer/showForm">Fill the form with Limitation (Customer form)</a>
 </body>
 
 </html>

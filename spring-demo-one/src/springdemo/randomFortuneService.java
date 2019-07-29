@@ -4,7 +4,7 @@ import java.util.Random;
 public class randomFortuneService implements FortuneService {
 	
 	private String[]array3 = {
-			"array1","array2","array3"
+			"Monday","Tuesday","Wensday"
 	};
 	private Random myRandom = new Random();
 	@Override

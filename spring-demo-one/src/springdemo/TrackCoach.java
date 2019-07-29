@@ -11,7 +11,7 @@ public class TrackCoach implements Coach {
 
 	@Override
 	public String getDailyWorkout() {
-		return "Track coach tell you run away";
+		return "Track coach tell you run 1 hours";
 	}
 
 	@Override

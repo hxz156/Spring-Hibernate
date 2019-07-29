@@ -12,12 +12,14 @@ public class HelloSpringApp {
 		
 		//retrieve bean from spring container
 		Coach theCoach = context.getBean("myCoach",Coach.class);
+		//CricketCoach theCoach = context.getBean("myCricketCoach",CricketCoach.class);
 		
 		//call method on the bean
 		System.out.println(theCoach.getDailyWorkout());
 		
 		// call method for fortune
 		System.out.println(theCoach.getDailyFortune());
+		//System.out.println(theCoach.getEmailAddress());
 		
 		//close the context
 		context.close();

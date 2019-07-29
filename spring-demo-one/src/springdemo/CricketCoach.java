@@ -7,7 +7,7 @@ public class CricketCoach implements Coach {
 	private String team;
 	//create a no-arg constructor
 	public CricketCoach() {
-		System.out.println("Cricket Coach: in no-arg constructor");
+		//System.out.println("Cricket Coach: in no-arg constructor");
 	}
 	
 	public String getEmailAddress() {
@@ -15,7 +15,7 @@ public class CricketCoach implements Coach {
 	}
 
 	public void setEmailAddress(String emailAddress) {
-		System.out.println("Cricket Coach: in setter method: setEmailAddress");
+		//System.out.println("Cricket Coach: in setter method: setEmailAddress");
 		this.emailAddress = emailAddress;
 	}
 
@@ -24,13 +24,13 @@ public class CricketCoach implements Coach {
 	}
 
 	public void setTeam(String team) {
-		System.out.println("Cricket Coach: in setter method: setTeam");
+		//System.out.println("Cricket Coach: in setter method: setTeam");
 		this.team = team;
 	}
 
 	//our setter method
 	public void setFortuneService(FortuneService fortuneService) {
-		System.out.println("Cricket Coach: in setter method setFortuneService");
+		//System.out.println("Cricket Coach: in setter method setFortuneService");
 		this.fortuneService = fortuneService;
 	}
 

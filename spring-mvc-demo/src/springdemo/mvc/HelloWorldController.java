@@ -50,13 +50,12 @@ public class HelloWorldController {
 		// convert the data to all caps
 		theName = theName.toUpperCase();
 		
-		// create the message
-		String result = "@ResquestParam came: " + theName;
+		// create the message	@ResquestParam came
+		String result = theName;
 		
 		// add message to the model
 		model.addAttribute("message", result);
 		
 		return "helloworld";
 	}
-	
 }

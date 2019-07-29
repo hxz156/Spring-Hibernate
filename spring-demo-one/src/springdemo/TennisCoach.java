@@ -1,15 +1,20 @@
 package springdemo;
 
 public class TennisCoach implements Coach{
-	@Override
+	private FortuneService fortuneService;
 	
+	@Override
 	public String getDailyWorkout() {
-		return "This is TennisCoach";
+		return "This is TennisCoach tell you practice back hand.";
 	}
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		return fortuneService.getFortune();
 	}
+
+	public void setFortuneService(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+	
 }

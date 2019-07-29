@@ -2,7 +2,16 @@
 
 <html>
 <head>
-	<title>Fill out the form. * means required</title>
+	Fill out the form. * means required 
+	<br>
+	Last Name should not be null
+	<br>
+	Freepass must between 0 and 10
+	<br>
+	PostalCode should be exactly 5 elements
+	<br>
+	Course code must start with "qq"
+	<br> <br>
 	<style>
 		.error{color:red}
 	</style>
