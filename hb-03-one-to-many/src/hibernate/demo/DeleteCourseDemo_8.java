@@ -8,7 +8,7 @@ import hibernate.demo.entity.Course;
 import hibernate.demo.entity.Instructor;
 import hibernate.demo.entity.InstructorDetail;
 
-public class CreateCoursesDemo {
+public class DeleteCourseDemo_8 {
 
 	public static void main(String[] args) {
 		
@@ -25,25 +25,16 @@ public class CreateCoursesDemo {
 		
 		try {
 			
-			// create the objects
-			Instructor tempInstructor = 
-					new Instructor("Anthony", "Davis", "@Davis.com");
-			
-			InstructorDetail tempInstructorDetail = 
-					new InstructorDetail(
-							"Lakers now", "Pelicans");
-			
-			// associate the objects
-			tempInstructor.setInstructor_detail_id(tempInstructorDetail);
-			
 			// start a transaction
 			session.beginTransaction();
 			
-			// save the instructor
-			// ** this will also save the details object because of CascadeType.ALL
-			// ** save two seperate tables inthe same time
-			System.out.println("Saving instructor: " + tempInstructor);
-			session.save(tempInstructor);
+			// get a course
+			int theId = 11;
+			Course tempCourse = session.get(Course.class, theId);
+			
+			// delete course
+			System.out.println("Deleting course: " + tempCourse);
+			session.delete(tempCourse);
 			
 			// commit transaction
 			session.getTransaction().commit();
